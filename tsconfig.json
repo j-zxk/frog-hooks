@@ -1,29 +1,24 @@
 {
+  "root": true,
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "ES5",
     "moduleResolution": "node",
-    "importHelpers": true,
     "jsx": "react",
     "esModuleInterop": true,
+    "downlevelIteration": true,
     "sourceMap": true,
-    "baseUrl": "./",
-    "strict": true,
+    "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "@@/*": ["src/.umi/*"]
+      "frogHooks": ["./packages/hooks/src/index.ts"],
+      "frog-hooks": ["./packages/hooks/src/index.ts"],
+      "frogHooks/lib/*": ["./packages/hooks/src/*"],
+      "frog-hooks/lib/*": ["./packages/hooks/src/*"]
     },
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "importHelpers": true
   },
-  "exclude": [
-    "node_modules",
-    "lib",
-    "es",
-    "dist",
-    "typings",
-    "**/__test__",
-    "test",
-    "docs",
-    "tests"
-  ]
+  "exclude": ["node_modules", "lib", "es", "dist", "example"]
 }
