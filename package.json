@@ -1,7 +1,6 @@
 {
   "name": "frog-hooks",
-  "version": "0.0.1",
-  "description": "",
+  "description": "frog React Hooks",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
