@@ -38,6 +38,7 @@
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.4.0",
     "@types/mockjs": "^1.0.7",
+    "@types/node": "^22.14.0",
     "@types/react-router": "^5.1.19",
     "@umijs/fabric": "^2.1.0",
     "antd": "^5.2.1",

@@ -1,9 +1,10 @@
 import { throttle } from 'lodash-es';
 import React, { useMemo } from 'react';
-import { useLatest, useUnmount } from 'frogHooks';
 import type { ThrottleOptions } from '../useThrottle/throttleOptions';
 import { isFunction } from '../utils';
 import isDev from '../utils/isDev';
+import useLatest from '../useLatest';
+import useUnmount from '../useUnmount';
 
 type noop = (...args: any[]) => any;
 

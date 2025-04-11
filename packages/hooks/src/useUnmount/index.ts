@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useLatest } from 'frogHooks';
+import useLatest from '../useLatest';
 import { isFunction } from '../utils';
 import isDev from '../utils/isDev';
 

@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useToggle } from 'frogHooks';
+import useToggle from '../useToggle';
 
 export interface Actions {
   setTrue: () => void;

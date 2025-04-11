@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useThrottleFn } from 'frogHooks';
+import useThrottleFn from '../useThrottleFn';
 import type { ThrottleOptions } from './throttleOptions';
 
 function useThrottle<T>(value: T, options?: ThrottleOptions) {

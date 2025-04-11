@@ -1,39 +1,39 @@
 name: Build and Deploy
 on:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main
 jobs:
-    build-and-deploy:
-        runs-on: ubuntu-latest
-        permissions:  # 关键权限配置
-            contents: write   # 允许推送代码
-            packages: write   # 允许发布包
-        steps:
-            - name: Checkout  ️
-              uses: actions/checkout@v2.3.1
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions: # 关键权限配置
+      contents: write # 允许推送代码
+      packages: write # 允许发布包
+    steps:
+      - name: Checkout  ️
+        uses: actions/checkout@v2.3.1
 
-            - name: lock npm version
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 18.20.7
+      - name: lock npm version
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.20.7
 
-            - name: Install and Build
-              run: |
-                  npm i -g pnpm
-                  pnpm run init
-                  pnpm run docs:build
-              env:
-                  NODE_OPTIONS: '--max_old_space_size=4096'
+      - name: Install and Build
+        run: |
+          npm i -g pnpm
+          pnpm run init
+          pnpm run docs:build
+        env:
+          NODE_OPTIONS: '--max_old_space_size=4096'
 
-            - name: Configure Git
-              run: |
-                  git config --global user.name "zxkxyz"
-                  git config --global user.email "522569695@qq.com"
+      - name: Configure Git
+        run: |
+          git config --global user.name "zxkxyz"
+          git config --global user.email "522569695@qq.com"
 
-            - name: Deploy
-              uses: JamesIves/github-pages-deploy-action@4.1.3
-              with:
-                  BRANCH: gh-pages
-                  FOLDER: docs/.vuepress/dist
-                  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.3
+        with:
+          BRANCH: gh-pages
+          FOLDER: dist
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}

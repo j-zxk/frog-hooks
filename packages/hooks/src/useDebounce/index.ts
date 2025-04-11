@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { useDebounceFn } from 'frogHooks';
 import type { DebounceOptions } from './debounceOptions';
+import useDebounceFn from '../useDebounceFn';
 
 function useDebounce<T>(value: T, options?: DebounceOptions) {
   const [debounced, setDebounced] = useState(value);

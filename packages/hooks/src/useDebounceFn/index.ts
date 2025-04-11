@@ -1,9 +1,10 @@
 import { debounce } from '../utils/lodash-polyfill';
 import { useMemo } from 'react';
 import type { DebounceOptions } from '../useDebounce/debounceOptions';
-import { useLatest, useUnmount } from 'frogHooks';
 import { isFunction } from '../utils';
 import isDev from '../utils/isDev';
+import useLatest from '../useLatest';
+import useUnmount from '../useUnmount';
 
 type noop = (...args: any[]) => any;
 
