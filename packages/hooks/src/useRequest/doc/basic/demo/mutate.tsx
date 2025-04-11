@@ -4,7 +4,7 @@
 
 import { message } from 'antd';
 import React, { useState, useRef } from 'react';
-import { useRequest } from 'frogHooks';
+import { useRequest } from 'frog-hooks';
 import Mock from 'mockjs';
 
 function getUsername(): Promise<string> {

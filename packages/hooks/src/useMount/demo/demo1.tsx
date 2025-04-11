@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { useMount, useBoolean } from 'frogHooks';
+import { useMount, useBoolean } from 'frog-hooks';
 import { message } from 'antd';
 
 const MyComponent = () => {

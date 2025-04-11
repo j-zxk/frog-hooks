@@ -2,7 +2,7 @@
  * title: 刷新用户名称
  */
 
-import { useRequest } from 'frogHooks';
+import { useRequest } from 'frog-hooks';
 import Mock from 'mockjs';
 import React, { useEffect } from 'react';
 

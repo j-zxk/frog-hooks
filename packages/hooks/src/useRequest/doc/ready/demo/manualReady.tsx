@@ -1,4 +1,4 @@
-import { useRequest, useToggle } from 'frogHooks';
+import { useRequest, useToggle } from 'frog-hooks';
 import Mock from 'mockjs';
 import React from 'react';
 

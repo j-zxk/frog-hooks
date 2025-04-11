@@ -1,6 +1,6 @@
 import Mock from 'mockjs';
 import React from 'react';
-import { useRequest, clearCache, useBoolean } from 'frogHooks';
+import { useRequest, clearCache, useBoolean } from 'frog-hooks';
 import { message } from 'antd';
 
 async function getArticle(): Promise<{ data: string; time: number }> {

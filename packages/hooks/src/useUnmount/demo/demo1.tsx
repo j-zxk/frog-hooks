@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { useBoolean, useUnmount } from 'frogHooks';
+import { useBoolean, useUnmount } from 'frog-hooks';
 import { message } from 'antd';
 
 function MyComponent() {

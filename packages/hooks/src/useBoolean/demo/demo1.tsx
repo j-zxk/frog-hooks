@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { useBoolean } from 'frogHooks';
+import { useBoolean } from 'frog-hooks';
 
 export default () => {
   const [state, { toggle, setTrue, setFalse }] = useBoolean(true);

@@ -58,7 +58,7 @@ pnpm run changelog
 
 ## 📧 联系
 
-- **frog Hooks** <https://encode-studio-fe.github.io/encode-hooks/>
+- **frog Hooks** <https://j-zxk.github.io/frog-hooks/>
 - **GitHub**: <https://github.com/j-zxk/frog-hooks>
 
 </br>

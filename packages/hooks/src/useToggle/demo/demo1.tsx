@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { useToggle } from 'frogHooks';
+import { useToggle } from 'frog-hooks';
 
 export default () => {
   const [state, { toggle, setLeft, setRight }] = useToggle();

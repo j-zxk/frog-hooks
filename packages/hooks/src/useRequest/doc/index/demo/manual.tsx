@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { useRequest } from 'frogHooks';
+import { useRequest } from 'frog-hooks';
 import { message } from 'antd';
 
 function changeUsername(

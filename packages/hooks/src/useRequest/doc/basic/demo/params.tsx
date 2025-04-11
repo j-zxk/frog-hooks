@@ -1,4 +1,4 @@
-import { useRequest } from 'frogHooks';
+import { useRequest } from 'frog-hooks';
 import Mock from 'mockjs';
 import React, { useState } from 'react';
 

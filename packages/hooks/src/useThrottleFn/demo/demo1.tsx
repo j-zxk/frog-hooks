@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { useThrottleFn } from 'frogHooks';
+import { useThrottleFn } from 'frog-hooks';
 
 export default () => {
   const [value, setValue] = useState(0);

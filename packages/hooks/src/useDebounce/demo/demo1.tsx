@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { useDebounce } from 'frogHooks';
+import { useDebounce } from 'frog-hooks';
 
 export default () => {
   const [value, setValue] = useState<string>();

@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { useUpdateEffect } from 'frogHooks';
+import { useUpdateEffect } from 'frog-hooks';
 
 export default () => {
   const [count, setCount] = useState(0);

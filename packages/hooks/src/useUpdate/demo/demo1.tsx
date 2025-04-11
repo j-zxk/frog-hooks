@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { useUpdate } from 'frogHooks';
+import { useUpdate } from 'frog-hooks';
 
 export default () => {
   const update = useUpdate();

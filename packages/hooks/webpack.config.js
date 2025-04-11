@@ -5,8 +5,8 @@ const path = require('path');
 module.exports = merge(common, {
   entry: './es/index.js',
   output: {
-    filename: 'frogHooks.js',
-    library: 'frogHooks',
+    filename: 'frog-hooks.js',
+    library: 'frog-hooks',
     path: path.resolve(__dirname, './dist'),
   },
 });

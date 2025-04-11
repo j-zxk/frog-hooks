@@ -1,13 +1,12 @@
 ---
 title: 首页
 hero:
-  desc: 印客学院 React 业务 Hooks
+  desc: React 业务 Hooks
   actions:
     - text: 指南
       link: /guide
     - text: Hooks 列表
       link: /hooks
-footer: Copyright (c) © 2023 by encode studio, All Rights Reserved
 ---
 
 ## ✨ 特性

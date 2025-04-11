@@ -1,5 +1,4 @@
-import { useBoolean } from 'frogHooks';
-import useRequest from '../../../';
+import { useBoolean, useRequest } from 'frog-hooks';
 import Mock from 'mockjs';
 import React, { useState } from 'react';
 
